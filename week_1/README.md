@@ -30,6 +30,7 @@ POSTGRES_PORT=5433
 ```
 
 ## Week 1 Homework
+Link to the [week 1 homework](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/cohorts/2025/01-docker-terraform/homework.md).
 
 ### Question 1
 Run docker with the `python:3.12.8` image in an interactive mode, use the entrypoint bash.
@@ -133,3 +134,24 @@ AND puz."Zone" = 'East Harlem North'
 ORDER BY tip_amount DESC
 LIMIT 1;
 ```
+
+### Question 7
+Which of the following sequences, respectively, describes the workflow for:
+1. Downloading the provider plugins and setting up backend,
+2. Generating proposed changes and auto-executing the plan
+3. Remove all resources managed by terraform
+
+#### terraform init
+The [terraform init](https://developer.hashicorp.com/terraform/cli/commands/init) command initializes a working directory containing Terraform configuration files. This is the first command that should be run after writing a new Terraform configuration or cloning an existing one from version control. It is safe to run this command multiple times.
+
+During init, Terraform searches the configuration for both direct and indirect references to providers and attempts to install the plugins for those providers.
+
+#### terraform apply
+The [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply) command executes the actions proposed in a Terraform plan.
+
+When you run terraform apply without passing a saved plan file, Terraform automatically creates a new execution plan as if you had run terraform plan, prompts you to approve that plan, and takes the indicated actions. You can use all of the planning modes and planning options to customize how Terraform will create the plan.
+
+You can pass the `-auto-approve` option to instruct Terraform to apply the plan without asking for confirmation.
+
+#### terraform destroy
+The [terraform destroy](https://developer.hashicorp.com/terraform/cli/commands/destroy) command is a convenient way to destroy all remote objects managed by a particular Terraform configuration.
