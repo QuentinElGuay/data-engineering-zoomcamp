@@ -1,4 +1,4 @@
-# Week 1
+# Module 1
 
 ## Prerequisites
 This project uses `python 3.12.8` (I recommend creating a virtual environment).
@@ -12,7 +12,7 @@ sudo apt install libpq-dev
 > [!NOTE]
 > All the following commands are executed from this folder.
 ```
-cd week_1/
+cd module_1/
 ```
 
 Install the required libs:
@@ -29,8 +29,9 @@ POSTGRES_HOST=localhost
 POSTGRES_PORT=5433
 ```
 
-## Week 1 Homework
-Link to the [week 1 homework](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/cohorts/2025/01-docker-terraform/homework.md).
+## Module 1 Homework
+Link to the [module 1 homework](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/cohorts/2025/01-docker-terraform/homework.md).
+
 
 ### Question 1
 Run docker with the `python:3.12.8` image in an interactive mode, use the entrypoint bash.
@@ -41,7 +42,7 @@ root@b6e6ddc7c31f:/# pip -V
 ```
 
 ### Question 2
-Given the following [docker-compose.yaml](week_1/docker-compose.yaml), what is the hostname and port that pgadmin should use to connect to the postgres database?
+Given the following [docker-compose.yaml](module_1/docker-compose.yaml), what is the hostname and port that pgadmin should use to connect to the postgres database?
 ```
 You can use either the name of the service (`db`) or the name of the container (`postgres`).
 Since **pgadmin** tries to connect to the **postgres database** using the network created by `docker compose`, it must use the port **in** the container (`5432`)
