@@ -172,3 +172,7 @@ cython_debug/
 
 # DuckDB databases
 .duckdb
+
+
+# Keys
+keys/
