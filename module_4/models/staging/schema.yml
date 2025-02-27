@@ -12,6 +12,7 @@ sources:
            # error_after: {count: 6, period: hour}
       - name: external_fhv_tripdata
 
+
 models:
     - name: stg_green_tripdata
       description: >
@@ -199,3 +200,4 @@ models:
     - name: stg_fhv_tripdata
       description: >
         To complete
+
