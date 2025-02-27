@@ -1,2 +1,4 @@
 dlt[duckdb]==1.7.0
+google-cloud-storage==3.0.0
 pandas==2.2.3
+pyarrow==19.0.1
