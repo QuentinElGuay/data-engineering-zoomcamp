@@ -213,3 +213,6 @@ terraform.rc
 
 # Keys
 keys/
+
+# DuckDB
+.duckdb
